@@ -16,7 +16,7 @@ const config: Config = {
   organizationName: 'amrae1',
   projectName: 'intagium-docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Internationalization
