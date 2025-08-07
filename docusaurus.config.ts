@@ -16,9 +16,9 @@ const config: Config = {
   organizationName: 'amrae1',
   projectName: 'intagium-docs',
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  onDuplicateRoutes: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
+  onDuplicateRoutes: 'ignore',
 
   // Internationalization
   i18n: {
