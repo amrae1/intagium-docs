@@ -14,7 +14,7 @@ const config: Config = {
 
   // GitHub pages deployment config
   organizationName: 'amrae1',
-  projectName: 'INTAGIUM',
+  projectName: 'intagium-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
