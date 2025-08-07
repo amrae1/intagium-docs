@@ -18,6 +18,7 @@ const config: Config = {
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
 
   // Internationalization
   i18n: {
