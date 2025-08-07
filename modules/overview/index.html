@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-modules/overview" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Modules Overview | INTAGIUM Official Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.intagium.com/img/intagium-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.intagium.com/img/intagium-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.intagium.com/modules/overview"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Modules Overview | INTAGIUM Official Documentation"><meta data-rh="true" name="description" content="INTAGIUM&#x27;s modular architecture is one of its most powerful features, enabling specialized functionality through purpose-built modules that extend the core Cosmos SDK capabilities. Each module is designed to address specific use cases while maintaining seamless integration with other modules and the broader ecosystem."><meta data-rh="true" property="og:description" content="INTAGIUM&#x27;s modular architecture is one of its most powerful features, enabling specialized functionality through purpose-built modules that extend the core Cosmos SDK capabilities. Each module is designed to address specific use cases while maintaining seamless integration with other modules and the broader ecosystem."><link data-rh="true" rel="icon" href="/img/intagium.ico"><link data-rh="true" rel="canonical" href="https://docs.intagium.com/modules/overview"><link data-rh="true" rel="alternate" href="https://docs.intagium.com/modules/overview" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.intagium.com/modules/overview" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Modules Overview","item":"https://docs.intagium.com/modules/overview"}]}</script><link rel="stylesheet" href="/assets/css/styles.f9331da0.css">
+<script src="/assets/js/runtime~main.137d2916.js" defer="defer"></script>
+<script src="/assets/js/main.51fffa9b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/intagium_logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/intagium_logo.svg" alt="INTAGIUM Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/intagium_logo.svg" alt="INTAGIUM Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">INTAGIUM</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/intro">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/amrae1/INTAGIUM" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://explorer.testnet.intagium.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Explorer<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/intro">Welcome to INTAGIUM</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/getting-started/overview">Getting Started</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/modules/overview">Modules Documentation</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/modules/overview">Modules Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/drm">Digital Rights Management (DRM) Module</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/dor">Digital Ownership Registry (DOR) Module</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/edm">EDM (Enhanced Data Management) Module</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/infra">Infrastructure Coordination (Infra) Module</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/quantum">Quantum Module (Placeholder)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/governance">Governance Module</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/web3-compatibility">Web3 Compatibility Layer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/modules/smart-contracts">Smart Contracts (CosmWasm)</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/flowdigramm/drm-flow">Flow Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/overview">API Guide</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Modules Documentation</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Modules Overview</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Modules Overview</h1></header>
+<p>INTAGIUM&#x27;s modular architecture is one of its most powerful features, enabling specialized functionality through purpose-built modules that extend the core Cosmos SDK capabilities. Each module is designed to address specific use cases while maintaining seamless integration with other modules and the broader ecosystem.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="active-modules">Active Modules<a href="#active-modules" class="hash-link" aria-label="Direct link to Active Modules" title="Direct link to Active Modules">​</a></h2>
+<p>INTAGIUM currently includes four active specialized modules, each serving distinct but complementary purposes:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="digital-rights-management-drm">Digital Rights Management (DRM)<a href="#digital-rights-management-drm" class="hash-link" aria-label="Direct link to Digital Rights Management (DRM)" title="Direct link to Digital Rights Management (DRM)">​</a></h3>
+<p>The DRM module provides comprehensive solution for managing digital content rights, licensing, and royalty distribution on-chain. It enables content creators to register their digital assets, define usage terms, and automatically enforce licensing conditions through smart contract logic.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Content registration and verification</li>
+<li>Flexible licensing framework</li>
+<li>Automated royalty distribution</li>
+<li>Cross-platform compatibility</li>
+<li>Granular permission controls</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Digital content licensing</li>
+<li>Intellectual property protection</li>
+<li>Automated royalty payments</li>
+<li>Multi-party content agreements</li>
+</ul>
+<p><strong><a href="/modules/drm">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="digital-ownership-registry-dor">Digital Ownership Registry (DOR)<a href="#digital-ownership-registry-dor" class="hash-link" aria-label="Direct link to Digital Ownership Registry (DOR)" title="Direct link to Digital Ownership Registry (DOR)">​</a></h3>
+<p>The DOR module serves as INTAGIUM&#x27;s universal asset registration and ownership tracking system, providing transparent and immutable ownership records for digital and tokenized real-world assets.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Universal asset registration</li>
+<li>Immutable ownership history</li>
+<li>Automated transfer mechanisms</li>
+<li>Auction and marketplace support</li>
+<li>Integration with external systems</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>NFT marketplaces and trading</li>
+<li>Domain name registration</li>
+<li>Real estate tokenization</li>
+<li>Collectibles authentication</li>
+<li>Supply chain tracking</li>
+</ul>
+<p><strong><a href="/modules/dor">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-data-management-edm">Enhanced Data Management (EDM)<a href="#enhanced-data-management-edm" class="hash-link" aria-label="Direct link to Enhanced Data Management (EDM)" title="Direct link to Enhanced Data Management (EDM)">​</a></h3>
+<p>The EDM module provides sophisticated data storage, delivery, and access control capabilities in a decentralized environment, addressing critical challenges of data privacy and security.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Secure data delivery</li>
+<li>Granular access controls</li>
+<li>Encryption and privacy protection</li>
+<li>Version management</li>
+<li>Analytics and reporting</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Secure document sharing</li>
+<li>Encrypted communications</li>
+<li>Data compliance management</li>
+<li>Enterprise data solutions</li>
+<li>Financial data security</li>
+<li>Research data sharing</li>
+<li>Legal document management</li>
+</ul>
+<p><strong><a href="/modules/edm">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="infrastructure--infra">Infrastructure  (Infra)<a href="#infrastructure--infra" class="hash-link" aria-label="Direct link to Infrastructure  (Infra)" title="Direct link to Infrastructure  (Infra)">​</a></h3>
+<p>The Infra module enables decentralized coordination of physical and digital infrastructure resources, providing a framework for resource sharing and management across various use cases.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Decentralized node registration</li>
+<li>Resource slot reservation</li>
+<li>Usage tracking and rewards</li>
+<li>Multi-use case support</li>
+<li>Automated coordination</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Drone network coordination</li>
+<li>Mail delivery systems</li>
+<li>Street infrastructure management</li>
+<li>Compute resource sharing</li>
+<li>WiFi network management</li>
+</ul>
+<p><strong><a href="/modules/infra">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="web3-compatibility-layer">Web3 Compatibility Layer<a href="#web3-compatibility-layer" class="hash-link" aria-label="Direct link to Web3 Compatibility Layer" title="Direct link to Web3 Compatibility Layer">​</a></h3>
+<p>The Web3 Compatibility Layer provides seamless interoperability with the Ethereum ecosystem while maintaining INTAGIUM&#x27;s advanced capabilities and performance benefits.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Complete JSON-RPC API compatibility</li>
+<li>MetaMask integration</li>
+<li>Smart contract deployment</li>
+<li>Event system compatibility</li>
+<li>Transaction format translation</li>
+<li>Gas model adaptation</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Ethereum DApp migration</li>
+<li>Cross-chain applications</li>
+<li>Web3 wallet integration</li>
+<li>Smart contract deployment</li>
+<li>Multi-chain development</li>
+</ul>
+<p><strong><a href="/modules/web3-compatibility">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="governance-module">Governance Module<a href="#governance-module" class="hash-link" aria-label="Direct link to Governance Module" title="Direct link to Governance Module">​</a></h3>
+<p>The Governance module provides INTAGIUM&#x27;s decentralized decision-making framework, enabling community-driven evolution of the platform through transparent voting mechanisms.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Community-driven decision making</li>
+<li>Token-weighted voting</li>
+<li>Flexible proposal types</li>
+<li>Transparent process</li>
+<li>Automatic execution</li>
+<li>Parameter management</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Protocol upgrades</li>
+<li>Parameter adjustments</li>
+<li>Module activation/deactivation</li>
+<li>Treasury management</li>
+<li>Community initiatives</li>
+</ul>
+<p><strong><a href="/modules/governance">Learn More →</a></strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="smart-contracts-cosmwasm">Smart Contracts (CosmWasm)<a href="#smart-contracts-cosmwasm" class="hash-link" aria-label="Direct link to Smart Contracts (CosmWasm)" title="Direct link to Smart Contracts (CosmWasm)">​</a></h3>
+<p>INTAGIUM includes comprehensive support for smart contracts through the CosmWasm runtime, providing a secure, efficient, and developer-friendly platform for building decentralized applications.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Rust-based development</li>
+<li>WebAssembly execution</li>
+<li>Module integration</li>
+<li>Enhanced security</li>
+<li>Cross-platform compatibility</li>
+<li>Rich ecosystem</li>
+</ul>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Decentralized applications</li>
+<li>Automated workflows</li>
+<li>Complex business logic</li>
+<li>Cross-module interactions</li>
+<li>Custom token implementations</li>
+</ul>
+<p><strong><a href="/modules/smart-contracts">Learn More →</a></strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="inactive-modules">Inactive Modules<a href="#inactive-modules" class="hash-link" aria-label="Direct link to Inactive Modules" title="Direct link to Inactive Modules">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quantum-module">Quantum Module<a href="#quantum-module" class="hash-link" aria-label="Direct link to Quantum Module" title="Direct link to Quantum Module">​</a></h3>
+<p>The Quantum module is currently inactive but represents INTAGIUM&#x27;s forward-thinking approach to post-quantum cryptography. This module can be activated through governance when quantum-resistant algorithms become necessary.</p>
+<p><strong>Future Capabilities:</strong></p>
+<ul>
+<li>Post-quantum cryptographic algorithms</li>
+<li>Quantum-resistant key management</li>
+<li>Migration tools for existing data</li>
+<li>Compatibility with quantum computing advances</li>
+</ul>
+<p><strong><a href="/modules/quantum">Learn More →</a></strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="module-architecture">Module Architecture<a href="#module-architecture" class="hash-link" aria-label="Direct link to Module Architecture" title="Direct link to Module Architecture">​</a></h2>
+<p>INTAGIUM&#x27;s modules are built on the Cosmos SDK framework, which provides a robust foundation for modular blockchain development. Each module operates independently while sharing common infrastructure for state management, transaction processing, and inter-module communication.</p>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modular-design-principles">Modular Design Principles<a href="#modular-design-principles" class="hash-link" aria-label="Direct link to Modular Design Principles" title="Direct link to Modular Design Principles">​</a></h3>
+<p><strong>Interoperability</strong>: Each module is designed to work seamlessly with other modules and the core Cosmos SDK functionality. Modules can share data and trigger actions across the ecosystem.</p>
+<p><strong>Governance Control</strong>: Modules can be activated, deactivated, or modified through INTAGIUM&#x27;s governance system, ensuring that the platform can evolve based on community needs.</p>
+<p><strong>Extensibility</strong>: The modular architecture allows for new modules to be added without disrupting existing functionality, enabling continuous innovation and adaptation.</p>
+<p><strong>Standards Compliance</strong>: All modules follow consistent design patterns and API standards, making integration and development predictable and efficient.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-module-features">Common Module Features<a href="#common-module-features" class="hash-link" aria-label="Direct link to Common Module Features" title="Direct link to Common Module Features">​</a></h3>
+<p>All INTAGIUM modules share certain common characteristics:</p>
+<p><strong>Message Types</strong>: Each module defines specific message types that enable users to interact with module functionality through transactions.</p>
+<p><strong>Query Types</strong>: Comprehensive query capabilities allow users to retrieve information and monitor module state.</p>
+<p><strong>Keeper Functions</strong>: Core business logic is implemented in keeper functions that handle validation, state changes, and cross-module interactions.</p>
+<p><strong>CLI Commands</strong>: Command-line interfaces provide direct access to module functionality for developers and power users.</p>
+<p><strong>REST APIs</strong>: RESTful APIs enable integration with web applications and external systems.</p>
+<p><strong>Genesis Configuration</strong>: Configurable parameters allow customization of module behavior and operational limits.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-patterns">Integration Patterns<a href="#integration-patterns" class="hash-link" aria-label="Direct link to Integration Patterns" title="Direct link to Integration Patterns">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-module-interactions">Cross-Module Interactions<a href="#cross-module-interactions" class="hash-link" aria-label="Direct link to Cross-Module Interactions" title="Direct link to Cross-Module Interactions">​</a></h3>
+<p>INTAGIUM&#x27;s modules are designed to work together, creating powerful combinations of functionality:</p>
+<p><strong>DRM + DOR Integration</strong>: Content registered in the DRM module can be tokenized as assets in the DOR module, enabling complex licensing and ownership arrangements.</p>
+<p><strong>EDM + DRM Integration</strong>: The EDM module can provide secure storage and delivery for DRM-protected content, ensuring that licensing terms are enforced at the data level.</p>
+<p><strong>Infra + All Modules</strong>: The Infrastructure module can coordinate resources needed by other modules, such as storage nodes for EDM or distribution networks for DRM.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-system-integration">External System Integration<a href="#external-system-integration" class="hash-link" aria-label="Direct link to External System Integration" title="Direct link to External System Integration">​</a></h3>
+<p>Each module provides comprehensive APIs for integration with external systems:</p>
+<p><strong>REST APIs</strong>: Standard HTTP APIs for web application integration
+<strong>gRPC APIs</strong>: High-performance APIs for system-to-system communication
+<strong>WebSocket APIs</strong>: Real-time APIs for live updates and notifications
+<strong>CLI Tools</strong>: Command-line interfaces for scripting and automation</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-and-customization">Development and Customization<a href="#development-and-customization" class="hash-link" aria-label="Direct link to Development and Customization" title="Direct link to Development and Customization">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-development">Module Development<a href="#module-development" class="hash-link" aria-label="Direct link to Module Development" title="Direct link to Module Development">​</a></h3>
+<p>INTAGIUM&#x27;s modular architecture enables developers to create custom modules for specific use cases:</p>
+<p><strong>Module SDK</strong>: Comprehensive development kit for creating new modules
+<strong>Testing Framework</strong>: Tools for testing module functionality and integration
+<strong>Documentation Templates</strong>: Standardized documentation patterns for new modules
+<strong>Deployment Tools</strong>: Automated deployment and governance integration</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-management">Configuration Management<a href="#configuration-management" class="hash-link" aria-label="Direct link to Configuration Management" title="Direct link to Configuration Management">​</a></h3>
+<p>Each module includes extensive configuration options:</p>
+<p><strong>Genesis Parameters</strong>: Initial configuration settings for module deployment
+<strong>Runtime Parameters</strong>: Settings that can be modified through governance
+<strong>Feature Flags</strong>: Toggles for enabling or disabling specific functionality
+<strong>Integration Settings</strong>: Configuration for external system connections</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-and-scalability">Performance and Scalability<a href="#performance-and-scalability" class="hash-link" aria-label="Direct link to Performance and Scalability" title="Direct link to Performance and Scalability">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimization-strategies">Optimization Strategies<a href="#optimization-strategies" class="hash-link" aria-label="Direct link to Optimization Strategies" title="Direct link to Optimization Strategies">​</a></h3>
+<p>INTAGIUM&#x27;s modules are designed for high performance and scalability:</p>
+<p><strong>Efficient State Management</strong>: Optimized data structures and storage patterns
+<strong>Parallel Processing</strong>: Support for concurrent operations where possible
+<strong>Caching Layers</strong>: Intelligent caching to reduce blockchain queries
+<strong>Batch Operations</strong>: Support for processing multiple operations efficiently</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monitoring-and-analytics">Monitoring and Analytics<a href="#monitoring-and-analytics" class="hash-link" aria-label="Direct link to Monitoring and Analytics" title="Direct link to Monitoring and Analytics">​</a></h3>
+<p>Comprehensive monitoring capabilities are built into each module:</p>
+<p><strong>Performance Metrics</strong>: Real-time performance monitoring and alerting
+<strong>Usage Analytics</strong>: Detailed analytics on module usage and performance
+<strong>Health Checks</strong>: Automated health monitoring and diagnostics
+<strong>Audit Trails</strong>: Complete audit logs for compliance and debugging</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-with-modules">Getting Started with Modules<a href="#getting-started-with-modules" class="hash-link" aria-label="Direct link to Getting Started with Modules" title="Direct link to Getting Started with Modules">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h3>
+<p>Before working with INTAGIUM modules, ensure you have:</p>
+<ul>
+<li>INTAGIUM node running and synchronized</li>
+<li>CLI tools installed and configured</li>
+<li>Test tokens for transaction fees</li>
+<li>Basic understanding of blockchain concepts</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="basic-module-interaction">Basic Module Interaction<a href="#basic-module-interaction" class="hash-link" aria-label="Direct link to Basic Module Interaction" title="Direct link to Basic Module Interaction">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Query module parameters</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">intagiumd query </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">module</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> params</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># List available commands for a module</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">intagiumd tx </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">module</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">--help</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">intagiumd query </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">module</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">--help</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Check module status</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">intagiumd query </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">module</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> status</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h3>
+<p>Explore the detailed documentation for each module:</p>
+<ul>
+<li><strong><a href="/modules/drm">DRM Module</a></strong> - Digital Rights Management</li>
+<li><strong><a href="/modules/dor">DOR Module</a></strong> - Digital Ownership Registry</li>
+<li><strong><a href="/modules/edm">EDM Module</a></strong> - Enhanced Data Management</li>
+<li><strong><a href="/modules/infra">Infra Module</a></strong> - Infrastructure Coordination</li>
+<li><strong><a href="/modules/governance">Governance Module</a></strong> - Governance</li>
+<li><strong><a href="/modules/smart-contracts">CosmWasme</a></strong> - Smart Contracts</li>
+<li><strong><a href="/modules/quantum">Quantum Module</a></strong> - Quantum Module</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community-and-support">Community and Support<a href="#community-and-support" class="hash-link" aria-label="Direct link to Community and Support" title="Direct link to Community and Support">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contributing-to-modules">Contributing to Modules<a href="#contributing-to-modules" class="hash-link" aria-label="Direct link to Contributing to Modules" title="Direct link to Contributing to Modules">​</a></h3>
+<p>INTAGIUM welcomes community contributions to module development:</p>
+<ul>
+<li><strong>Feature Requests</strong>: Propose new functionality through GitHub issues</li>
+<li><strong>Bug Reports</strong>: Report issues and help improve module stability</li>
+<li><strong>Code Contributions</strong>: Submit pull requests for bug fixes and enhancements</li>
+<li><strong>Documentation</strong>: Help improve module documentation and examples</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getting-help">Getting Help<a href="#getting-help" class="hash-link" aria-label="Direct link to Getting Help" title="Direct link to Getting Help">​</a></h3>
+<ul>
+<li><strong><a href="https://discord.gg/intagium" target="_blank" rel="noopener noreferrer">Discord Community</a></strong> - Real-time community support</li>
+<li><strong><a href="https://github.com/amrae1/INTAGIUM/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></strong> - Technical support and bug reports</li>
+<li><strong><a href="/api/overview">API Documentation</a></strong> - Detailed API references</li>
+<li><strong><a href="/developer-tools/cli">Developer Tools</a></strong> - Tools and utilities for development</li>
+</ul>
+<p>The modular architecture of INTAGIUM provides a powerful foundation for building sophisticated blockchain applications. Each module addresses specific real-world challenges while maintaining the flexibility and interoperability needed for complex use cases.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/amrae1/INTAGIUM/tree/main/docs/docs/modules/overview.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/getting-started/hello-world"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Hello World Tutorial</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/modules/drm"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Digital Rights Management (DRM) Module</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#active-modules" class="table-of-contents__link toc-highlight">Active Modules</a><ul><li><a href="#digital-rights-management-drm" class="table-of-contents__link toc-highlight">Digital Rights Management (DRM)</a></li><li><a href="#digital-ownership-registry-dor" class="table-of-contents__link toc-highlight">Digital Ownership Registry (DOR)</a></li><li><a href="#enhanced-data-management-edm" class="table-of-contents__link toc-highlight">Enhanced Data Management (EDM)</a></li><li><a href="#infrastructure--infra" class="table-of-contents__link toc-highlight">Infrastructure  (Infra)</a></li><li><a href="#web3-compatibility-layer" class="table-of-contents__link toc-highlight">Web3 Compatibility Layer</a></li><li><a href="#governance-module" class="table-of-contents__link toc-highlight">Governance Module</a></li><li><a href="#smart-contracts-cosmwasm" class="table-of-contents__link toc-highlight">Smart Contracts (CosmWasm)</a></li></ul></li><li><a href="#inactive-modules" class="table-of-contents__link toc-highlight">Inactive Modules</a><ul><li><a href="#quantum-module" class="table-of-contents__link toc-highlight">Quantum Module</a></li></ul></li><li><a href="#module-architecture" class="table-of-contents__link toc-highlight">Module Architecture</a><ul><li><a href="#modular-design-principles" class="table-of-contents__link toc-highlight">Modular Design Principles</a></li><li><a href="#common-module-features" class="table-of-contents__link toc-highlight">Common Module Features</a></li></ul></li><li><a href="#integration-patterns" class="table-of-contents__link toc-highlight">Integration Patterns</a><ul><li><a href="#cross-module-interactions" class="table-of-contents__link toc-highlight">Cross-Module Interactions</a></li><li><a href="#external-system-integration" class="table-of-contents__link toc-highlight">External System Integration</a></li></ul></li><li><a href="#development-and-customization" class="table-of-contents__link toc-highlight">Development and Customization</a><ul><li><a href="#module-development" class="table-of-contents__link toc-highlight">Module Development</a></li><li><a href="#configuration-management" class="table-of-contents__link toc-highlight">Configuration Management</a></li></ul></li><li><a href="#performance-and-scalability" class="table-of-contents__link toc-highlight">Performance and Scalability</a><ul><li><a href="#optimization-strategies" class="table-of-contents__link toc-highlight">Optimization Strategies</a></li><li><a href="#monitoring-and-analytics" class="table-of-contents__link toc-highlight">Monitoring and Analytics</a></li></ul></li><li><a href="#getting-started-with-modules" class="table-of-contents__link toc-highlight">Getting Started with Modules</a><ul><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#basic-module-interaction" class="table-of-contents__link toc-highlight">Basic Module Interaction</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></li><li><a href="#community-and-support" class="table-of-contents__link toc-highlight">Community and Support</a><ul><li><a href="#contributing-to-modules" class="table-of-contents__link toc-highlight">Contributing to Modules</a></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting Help</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/getting-started/overview">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/modules/overview">Modules</a></li><li class="footer__item"><a class="footer__link-item" href="/api/overview">API Guide</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/D5G6PX7B" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/intagium" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://t.me/+46mKZhJsP8NiMDMy" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/amrae1/INTAGIUM" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://explorer.testnet.intagium.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Testnet Explorer<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://faucet.intagium.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Faucet<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 INTAGIUM.</div></div></div></footer></div>
+</body>
+</html>
